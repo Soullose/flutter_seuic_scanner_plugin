@@ -41,5 +41,6 @@ public class FlutterSeuicScannerPlugin implements FlutterPlugin, MethodCallHandl
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
     channel.setMethodCallHandler(null);
+    scannerEventChannel.setStreamHandler(null);
   }
 }

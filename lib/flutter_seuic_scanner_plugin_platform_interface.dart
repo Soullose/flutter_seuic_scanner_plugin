@@ -8,7 +8,8 @@ abstract class FlutterSeuicScannerPluginPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static FlutterSeuicScannerPluginPlatform _instance = MethodChannelFlutterSeuicScannerPlugin();
+  static FlutterSeuicScannerPluginPlatform _instance =
+      MethodChannelFlutterSeuicScannerPlugin();
 
   /// The default instance of [FlutterSeuicScannerPluginPlatform] to use.
   ///

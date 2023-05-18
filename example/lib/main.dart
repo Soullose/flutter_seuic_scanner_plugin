@@ -1,9 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:flutter_seuic_scanner_plugin/flutter_seuic_scanner_plugin.dart';
 
 void main() {
@@ -18,7 +15,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
   String _barCode = 'null';
   final _flutterSeuicScannerPlugin = FlutterSeuicScannerPlugin();
 
@@ -39,7 +35,6 @@ class _MyAppState extends State<MyApp> {
       });
     });
   }
-
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-class Channel{
+class Channel {
   static String scannerCode = "scanner#code";
   static String sendMode = "barcode_send_mode";
 

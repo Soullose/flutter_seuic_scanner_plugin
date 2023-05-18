@@ -5,13 +5,15 @@ import 'Channel.dart';
 import 'flutter_seuic_scanner_plugin_platform_interface.dart';
 
 /// An implementation of [FlutterSeuicScannerPluginPlatform] that uses method channels.
-class MethodChannelFlutterSeuicScannerPlugin extends FlutterSeuicScannerPluginPlatform {
-
+class MethodChannelFlutterSeuicScannerPlugin
+    extends FlutterSeuicScannerPluginPlatform {
   @visibleForTesting
   final eventChannel = EventChannel(Channel.scannerCode);
 
   @override
   Stream<String> getScannerCode() {
-    return eventChannel.receiveBroadcastStream().map((event) => event as String);
+    return eventChannel
+        .receiveBroadcastStream()
+        .map((event) => event as String);
   }
 }
